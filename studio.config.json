@@ -2,7 +2,7 @@
   "packages": {
     "dir": "",
     "menu": [
-      "readme",
+      "Theme",
       [
         "tokens",
         [
@@ -18,23 +18,9 @@
         ]
       ],
       [
-        "theme-ui",
+        "Components",
         [
-          "tui-button",
-          "tui-utils"
-        ]
-      ],
-      [
-        "styled-components",
-        [
-          "styled-button",
-          "styled-utils"
-        ]
-      ],
-      [
-        "dockit",
-        [
-          "layout"
+          "select"
         ]
       ]
     ]
