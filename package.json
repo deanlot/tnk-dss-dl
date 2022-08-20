@@ -1,0 +1,24 @@
+{
+  "name": "@backlight-dev/deanl.react-sui-l72bei7k",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve kufwpEI4DSlGWpBnpJQV --open"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.0",
+    "theme-ui": "^0.10.0"
+  },
+  "devDependencies": {
+    "@divriots/dockit-react": "^0.0.84",
+    "@mdx-js/react": "^1.6.22",
+    "@types/styled-components": "^5.1.10",
+    "deepmerge": "^4.2.2"
+  }
+}

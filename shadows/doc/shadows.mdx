@@ -1,0 +1,32 @@
+import { mdx } from '@mdx-js/react';
+import { theme } from '~/all';
+import { shadows } from '~/shadows';
+import { SystemUIShowcases } from '@divriots/dockit-react/systemui-showcases';
+import { MdxLayout } from '~/layout';
+export default MdxLayout;
+
+export const ShadowsDefinition = () => (
+  <pre>
+    <code>{JSON.stringify(shadows, null, 2)}</code>
+  </pre>
+);
+
+# Shadows
+
+Named values defined as a plain object.
+
+## Definition
+
+<ShadowsDefinition />
+
+## Showcases
+
+<SystemUIShowcases
+  theme={theme}
+  showcaseKey="boxShadow"
+  componentProps={{
+    width: '8rem',
+    height: '8rem',
+    borderRadius: 4,
+  }}
+/>
