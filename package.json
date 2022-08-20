@@ -6,7 +6,8 @@
   "type": "module",
   "homepage": "{{ homepage }}",
   "scripts": {
-    "serve": "npx backlight@latest serve kufwpEI4DSlGWpBnpJQV --open"
+    "serve": "npx backlight@latest serve kufwpEI4DSlGWpBnpJQV --open",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -16,6 +17,13 @@
     "@divriots/dockit-react": "0.0.85",
     "@mdx-js/react": "2.1.3",
     "@radix-ui/react-select": "1.0.0",
-    "@stitches/react": "1.2.8"
+    "@stitches/react": "1.2.8",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1"
   }
 }
