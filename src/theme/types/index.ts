@@ -1,1 +1,3 @@
-export type { WhiteLabelColors } from './whiteLabel';
+export * from './whiteLabel';
+export * from './theme';
+export * from './baseTheme';
