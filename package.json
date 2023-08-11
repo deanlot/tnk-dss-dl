@@ -9,6 +9,7 @@
     "dist/",
     "*.md"
   ],
+  "workspaces": ["app/a"],
   "scripts": {
     "test": "vitest",
     "test:ci": "vitest run --coverage",
