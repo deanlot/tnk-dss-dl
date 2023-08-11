@@ -1,5 +1,5 @@
 {
-  "name": "@ts-guru/a",
+  "name": "deanl.tnk-dss-dl.a",
   "version": "0.0.16",
   "description": "connect to various data stores using one interface",
   "main": "./dist/index.js",
