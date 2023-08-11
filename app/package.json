@@ -1,5 +1,5 @@
 {
-  "name": "@ts-guru/data-adapters",
+  "name": "@ts-guru/a",
   "version": "0.0.16",
   "description": "connect to various data stores using one interface",
   "main": "./dist/index.js",
@@ -9,7 +9,6 @@
     "dist/",
     "*.md"
   ],
-  "workspaces": ["app/a"],
   "scripts": {
     "test": "vitest",
     "test:ci": "vitest run --coverage",
