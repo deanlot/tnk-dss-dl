@@ -44,13 +44,7 @@
   "dependencies": {
     "@aws-sdk/client-ssm": "3.385.0",
     "@aws-sdk/credential-providers": "3.385.0",
-    "hot-shots": "10.0.0",
-    "knex": "2.4.2",
-    "mysql2": "3.1.0",
-    "node-pg-migrate": "^6.2.2",
-    "octokit": "^3.1.0",
-    "pg": "8.11.0",
-    "pg-query-stream": "4.3.0"
+    "hot-shots": "10.0.0"
   },
   "devDependencies": {
     "@types/pg": "^8.6.6",
