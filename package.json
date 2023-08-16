@@ -1,5 +1,5 @@
 {
-  "name": "deanl.tnk-dss-dl",
+  "name": "@ts-guru/data-adapters",
   "version": "0.0.16",
   "description": "connect to various data stores using one interface",
   "main": "./dist/index.js",
@@ -9,7 +9,6 @@
     "dist/",
     "*.md"
   ],
-  "workspaces": ["app/a"],
   "scripts": {
     "test": "vitest",
     "test:ci": "vitest run --coverage",
@@ -19,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fastnorth/data-adapters.git"
+    "url": "git+https://github.com/tsguru/data-adapters.git"
   },
   "keywords": [
     "data-adapter",
@@ -29,9 +28,9 @@
   "author": "deanlot@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fastnorth/data-adapters/issues"
+    "url": "https://github.com/tsguru/data-adapters/issues"
   },
-  "homepage": "https://github.com/fastnorth/data-adapters#readme",
+  "homepage": "https://github.com/tsguru/data-adapters#readme",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -44,7 +43,13 @@
   "dependencies": {
     "@aws-sdk/client-ssm": "3.385.0",
     "@aws-sdk/credential-providers": "3.385.0",
-    "hot-shots": "10.0.0"
+    "hot-shots": "10.0.0",
+    "knex": "2.4.2",
+    "mysql2": "3.1.0",
+    "node-pg-migrate": "^6.2.2",
+    "octokit": "^3.1.0",
+    "pg": "8.11.0",
+    "pg-query-stream": "4.3.0"
   },
   "devDependencies": {
     "@types/pg": "^8.6.6",
