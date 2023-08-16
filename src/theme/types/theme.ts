@@ -10,7 +10,7 @@ export type DSTheme = {
   /*
   Things I will not impliment (but would IRL) as they would be too much effort right now.
    */
-  // borderStyles: { [token in number | string]: boolean | number | string };
+  borderStyles: { [token in number | string]: boolean | number | string };
   // borderWidths: BorderWidths;
   // fonts: Fonts;
   // fontSizes: FontSizes;
