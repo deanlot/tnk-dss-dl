@@ -1,62 +1,46 @@
 {
-  "name": "deanl.tnk-dss-dl",
-  "version": "0.0.16",
-  "description": "connect to various data stores using one interface",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "files": [
-    "dist/",
-    "*.md"
-  ],
-  "workspaces": ["app/a"],
+  "name": "ts-guru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "vitest",
-    "test:ci": "vitest run --coverage",
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "lint": "npx eslint lib"
+    "build:cdk:global": "npm run build -w @ts-guru/cdk-global",
+    "build:cdk:cloudfront": "npm run build -w @ts-guru/cdk-cloudfront",
+    "watch:cdk:global": "npm run watch -w @ts-guru/cdk-global",
+    "watch:cdk:cloudfront": "npm run watch -w @ts-guru/cdk-cloudfront",
+    "watch:cdk:bulkbot": "npm run watch -w @ts-guru/cdk-bulkbot",
+    "serve:www.tsguru.co": "npm run serve -w @ts-guru/www.tsguru.co",
+    "build:www.tsguru.co": "npm run build -w @ts-guru/www.tsguru.co",
+    "build:lib:data-adapters": "npm run build -w @ts-guru/data-adapters",
+    "watch:lib:data-adapters": "npm run build:watch -w @ts-guru/data-adapters",
+    "build:lib:bulkbot-core": "npm run build -w @ts-guru/bulkbot-core",
+    "watch:lib:bulkbot-core": "npm run build:watch -w @ts-guru/bulkbot-core",
+    "build": "npm run build -ws"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fastnorth/data-adapters.git"
-  },
-  "keywords": [
-    "data-adapter",
-    "database",
-    "streaming"
-  ],
-  "author": "deanlot@gmail.com",
+  "author": "Dean Lotriet",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fastnorth/data-adapters/issues"
-  },
-  "homepage": "https://github.com/fastnorth/data-adapters#readme",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    },
-    "./github-adapter": {
-      "import": "./dist/"
-    }
+  "workspaces": [
+    "cdk/global",
+    "cdk/cloudfront",
+    "lib/bulkbot-core",
+    "cdk/lambdas/bulkbot",
+    "lib/data-adapters",
+    "app/api.bulkbot.co",
+    "app/www.tsguru.co"
+  ],
+  "devDependencies": {
+    "@types/jest": "29.4.0",
+    "@types/node": "^18.14.6",
+    "eslint": "8.40.0",
+    "jest": "29.5.0",
+    "prettier": "2.8.8",
+    "ts-jest": "29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "5.0.4"
   },
   "dependencies": {
-    "@aws-sdk/client-ssm": "3.385.0",
-    "@aws-sdk/credential-providers": "3.385.0",
-    "hot-shots": "10.0.0"
-  },
-  "devDependencies": {
-    "@types/pg": "^8.6.6",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
-    "@typescript-eslint/parser": "5.51.0",
-    "@vitest/coverage-c8": "^0.28.4",
-    "@vitest/coverage-v8": "0.34.1",
-    "date-fns": "2.30.0",
-    "lint-staged": "13.1.0",
-    "prettier": "2.8.3",
-    "tarn": "3.0.2",
-    "typescript": "4.9.5",
-    "vitest": "0.34.1"
+    "constructs": "10.0.0",
+    "source-map-support": "0.5.21",
+    "axios": "1.4.0"
   }
 }
