@@ -41,8 +41,7 @@
     }
   },
   "dependencies": {
-    "knex": "2.4.2"
-
+    "knex": "2.5.1"
   },
   "devDependencies": {
     "@types/pg": "^8.6.6"
