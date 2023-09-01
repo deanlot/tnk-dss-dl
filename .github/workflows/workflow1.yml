@@ -1,2 +1,4 @@
 name: 'A workflow'
-description: 'A sample workflow'
+description: 'A sample workflow .github'
+jobs:
+  test
