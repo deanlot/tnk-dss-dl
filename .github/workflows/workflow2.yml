@@ -1,0 +1,4 @@
+name: 'A workflow'
+description: 'A sample workflow'
+jobs:
+  test
