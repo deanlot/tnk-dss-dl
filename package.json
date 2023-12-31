@@ -1,5 +1,5 @@
 {
-  "name": "deanl.tnk-dss-dl",
+  "name": "deanl.tnk-dss-dl.a",
   "version": "0.0.16",
   "description": "connect to various data stores using one interface",
   "main": "./dist/index.js",
@@ -9,7 +9,6 @@
     "dist/",
     "*.md"
   ],
-  "workspaces": ["app/a"],
   "scripts": {
     "test": "vitest",
     "test:ci": "vitest run --coverage",
@@ -42,21 +41,9 @@
     }
   },
   "dependencies": {
-    "@aws-sdk/client-ssm": "3.385.0",
-    "@aws-sdk/credential-providers": "3.385.0",
-    "hot-shots": "10.0.0"
+    "knex": "2.5.1"
   },
   "devDependencies": {
-    "@types/pg": "^8.6.6",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
-    "@typescript-eslint/parser": "5.51.0",
-    "@vitest/coverage-c8": "^0.28.4",
-    "@vitest/coverage-v8": "0.34.1",
-    "date-fns": "2.30.0",
-    "lint-staged": "13.1.0",
-    "prettier": "2.8.3",
-    "tarn": "3.0.2",
-    "typescript": "4.9.5",
-    "vitest": "0.34.1"
+    "@types/pg": "^8.6.6"
   }
 }
