@@ -9,7 +9,9 @@
     "dist/",
     "*.md"
   ],
-  "workspaces": ["app/a"],
+  "workspaces": [
+    "app/a"
+  ],
   "scripts": {
     "test": "vitest",
     "test:ci": "vitest run --coverage",
@@ -42,8 +44,8 @@
     }
   },
   "dependencies": {
-    "@aws-sdk/client-ssm": "3.385.0",
-    "@aws-sdk/credential-providers": "3.385.0",
+    "@aws-sdk/client-ssm": "3.490.0",
+    "@aws-sdk/credential-providers": "3.490.0",
     "hot-shots": "10.0.0"
   },
   "devDependencies": {
